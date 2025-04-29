@@ -1,0 +1,17 @@
+# Images and labels direcotry should be relative to train.py
+TRAIN_DIR_IMAGES: '/home/rbist/datasets/AutoLabel/FasterRCNN/400images/images/train/'
+TRAIN_DIR_LABELS: '/home/rbist/datasets/AutoLabel/FasterRCNN/400images/labels/train/'
+VALID_DIR_IMAGES: '/home/rbist/datasets/AutoLabel/FasterRCNN/400images/images/val/'
+VALID_DIR_LABELS: '/home/rbist/datasets/AutoLabel/FasterRCNN/400images/labels/val/'
+
+# Class names.
+CLASSES: [
+    '__background__',
+    'Broiler', 'Hen'
+]
+
+# Number of classes (object classes + 1 for background class in Faster RCNN).
+NC: 3
+
+# Whether to save the predictions of the validation set while training.
+SAVE_VALID_PREDICTION_IMAGES: True
